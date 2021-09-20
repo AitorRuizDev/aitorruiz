@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --main-bg-color: #F6F8FC;
+    --border-color: #CBD4E1;
+    --main-color: #638404;
+    --info-color:#2563EB;
+  }
+
+  body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+  }
+
+  header{
+    font-weight:500;
+    height: 7%;
+    width: 100%; /*maybe change*/
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  nav a{
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    color: #27364B;
+  }
+
+  nav a:hover{
+    color: var(--main-color);
+  }
+
+  #action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/icons/arrow-right.svg)no-repeat;
+    background-position: right;
+    width: 5%;
+  }
+
+  #action a{
+    padding:20px;
+    text-decoration: none;
+    color: var(--info-color);
+    background-position: right center;
+  }
+
+  #action:hover{
+    background: url(/assets/icons/arrow-right-green.svg)no-repeat;
+    background-position: right;
+    color:var(--main-color);
+
+  }
+
+  #action a:hover{
+    
+    color:var(--main-color);
+  }
+
+  #action-icon{
+    margin-top:5px;
+  }
+
+
+  #about {
+    margin-top: 8%; /*maybe change*/
+  }
