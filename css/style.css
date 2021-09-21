@@ -27,6 +27,16 @@
   p{
     color: var(--font-color);
   }
+  
+  a{
+    width: 5vw;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   body{
     height: 93vh;
@@ -124,7 +134,7 @@
     flex-direction: column;
     height: 30vh;
     width: 100%;
-    margin-top: 7vh; /*maybe change*/
+    margin-top: 7vh; 
   }
 
   #about div{
@@ -166,7 +176,7 @@
     width: 100vw;
     height: 25vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
   }
@@ -182,15 +192,20 @@
   }
 
   #contact-title{
+    width: 100vw;
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #contact-types{
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 20vh;
+    margin-bottom: 5vh;
   }
 
   .contact-types-box{
@@ -198,10 +213,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    height: 9.5vh;
+    width: 5vw;
+  }
+
+  .contact-types-box a {
+    height: 9.5vh;
   }
 
   #contact-description{
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
   }
 
   /* FOOTER */
