@@ -49,11 +49,38 @@
     border-bottom: 1px solid var(--border-color);
   }
 
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 5vw;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+    text-align: center;
+  }
+  
+
   nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding: 20px;
-    margin: 10px;
-    color: #27364B;
+    color: var(--dark-color);
+    width: 5vw;
+    text-align: center;
+    height: 7vh;
   }
 
   nav a:hover{
@@ -64,32 +91,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/assets/icons/arrow-right.svg)no-repeat;
-    background-position: right;
+    background: url(/assets/icons/resume.svg)no-repeat;
+    background-position: center;
     width: 5%;
   }
 
   #action a{
-    padding:20px;
+    width: 5vw;
+    height: 7vh;
     text-decoration: none;
     color: var(--info-color);
-    background-position: right center;
+    background-position: center;
   }
 
   #action:hover{
-    background: url(/assets/icons/arrow-right-green.svg)no-repeat;
-    background-position: right;
+    background: url(/assets/icons/resume-green.svg)no-repeat;
+    background-position: center;
     color:var(--main-color);
 
   }
 
   #action a:hover{
-    
     color:var(--main-color);
-  }
-
-  #action-icon{
-    margin-top:5px;
   }
 
   /* ABOUT */
