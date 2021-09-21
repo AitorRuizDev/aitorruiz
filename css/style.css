@@ -11,17 +11,35 @@
     --border-color: #CBD4E1;
     --main-color: #638404;
     --info-color:#2563EB;
+    --header-color: #F1F4F9;
+    --font-color: #27364B;
+    --dark-color: #0F1A2A;
+  }
+
+  h1 {
+    color: var(--dark-color);
+  }
+
+  h2, span {
+    color: var(--main-color);
+  }
+
+  p{
+    color: var(--font-color);
   }
 
   body{
-    height: 100%;
+    height: 93vh;
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-bg-color);
   }
 
+  /* HEADER */
+
   header{
+    background-color: var(--header-color);
     font-weight:500;
-    height: 7%;
+    height: 7vh;
     width: 100%; /*maybe change*/
     position: fixed;
     top: 0;
@@ -74,7 +92,104 @@
     margin-top:5px;
   }
 
+  /* ABOUT */
 
   #about {
-    margin-top: 8%; /*maybe change*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    margin-top: 7vh; /*maybe change*/
   }
+
+  #about div{
+    margin: 5px;
+  }
+
+  #about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-image img{
+    height: 15vh;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* SKILLS */
+
+  #skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  #skills-title{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #skills-columns{
+    margin-bottom: 5vh;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* CONTACT */
+
+  #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  #contact-title{
+    height: 5vh;
+  }
+
+  #contact-types{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .contact-types-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact-description{
+    height: 5vh;
+  }
+
+  /* FOOTER */
+
+  footer{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--header-color);
+    height: 3vh;
+  }
+
