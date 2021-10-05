@@ -29,13 +29,14 @@
   }
   
   a{
-    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100%;
+    width: 75%;
+    margin: 0.5em;
   }
 
   body{
@@ -54,43 +55,36 @@
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  #header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    height: 7vh;
   }
 
   #logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 25%;
+    height: 100%;
   }
 
-  #logo a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vh;
-    width: 5vw;
-  }
 
   nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 15vw;
     text-align: center;
-  }
-  
-
-  nav a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: var(--dark-color);
-    width: 5vw;
-    text-align: center;
-    height: 7vh;
+    width: 50%;
+    height: 100%;
   }
 
   nav a:hover{
@@ -103,22 +97,18 @@
     align-items: center;
     background: url(/assets/icons/resume.svg)no-repeat;
     background-position: center;
-    width: 5%;
+    height: 7vh;
+    width: 25%;
   }
 
   #action a{
-    width: 5vw;
-    height: 7vh;
-    text-decoration: none;
     color: var(--info-color);
-    background-position: center;
   }
 
   #action:hover{
     background: url(/assets/icons/resume-green.svg)no-repeat;
-    background-position: center;
+    background-position:center;
     color:var(--main-color);
-
   }
 
   #action a:hover{
@@ -137,20 +127,55 @@
     margin-top: 7vh; 
   }
 
-  #about div{
-    margin: 5px;
+  #about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
   }
 
   #about-image{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60%;
   }
 
   #about-image img{
-    height: 15vh;
+    height: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #about-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+  }
+
+  #about-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+  }
+
+  #about-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+  }
+
+  #about-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
   }
 
   /* SKILLS */
@@ -163,18 +188,26 @@
     height: 30vh;
   }
 
-  #skills-title{
-    width: 100vw;
-    height: 5vh;
+  #skills-container{
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background: url(/assets/icons/decoration.svg)no-repeat;
+    background-position: center;
+    height: 90%;
+  }
+
+  #skills-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   #skills-columns{
-    margin-bottom: 5vh;
-    width: 100vw;
-    height: 25vh;
+    height: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -191,21 +224,26 @@
     height: 30vh;
   }
 
+  #contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+  }
+
   #contact-title{
-    width: 100vw;
-    height: 5vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   #contact-types{
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 20vh;
-    margin-bottom: 5vh;
+    width: 50%;
   }
 
   .contact-types-box{
@@ -214,20 +252,23 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 9.5vh;
-    width: 5vw;
+    height: 5em;
+    width: 5em;
   }
 
   .contact-types-box a {
-    height: 9.5vh;
-  }
-
-  #contact-description{
-    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  #contact-description{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   /* FOOTER */
@@ -241,4 +282,3 @@
     background-color: var(--header-color);
     height: 3vh;
   }
-
