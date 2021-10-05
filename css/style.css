@@ -128,7 +128,7 @@
 
   #about-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 60%;
@@ -137,9 +137,6 @@
   }
 
   #about-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 60%;
   }
 
@@ -147,35 +144,6 @@
     height: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  #about-title-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 30%;
-  }
-
-  #about-title{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 50%;
-  }
-
-  #about-subtitle{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 50%;
-  }
-
-  #about-description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
   }
 
   /* SKILLS */
@@ -191,18 +159,11 @@
   #skills-container{
     width: 60%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: url(/assets/icons/decoration.svg)no-repeat;
     background-position: center;
     height: 90%;
-  }
-
-  #skills-title{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   #skills-columns{
