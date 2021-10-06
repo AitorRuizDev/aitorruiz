@@ -19,14 +19,22 @@
                 <a href="#contact">Contact</a>
             </nav>
             <div id="action">
-                <a href="/assets/brand/en_CV_Ruiz_Torralbo_Aitor.pdf" download target="blank""></a>
+                <a href="/assets/brand/en_CV_Ruiz_Torralbo_Aitor.pdf" download target="blank"></a>
             </div>
         </div>
     </header>
     <section id="about">
         <div id="about-container">
             <div id="about-image">
-                <img src="assets/brand/aitor.png" alt="personal photo of Aitor Ruiz Torralbo">
+                <div id="about-image-modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                    <div id="description">
+                        <p>My name is Aitor Ruiz Torralbo, I am a web developer from Viladecans, Barcelona, ​​Spain born on March 14, 2001. I have finished the upper cycle of web application development. My core skills are HTML, CSS, PHP. My native languages are Spanish and Catalan and I'm very experienced with english. My goal is to improve my level and knowledge to create my own company in the future.</p>
+                    </div>
+                  </div>
+                <img id="about-image-me" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="assets/brand/aitor.png" alt="Photo by Aitor Ruiz">
             </div>
             <div id="about-title-container">
                 <div id="about-subtitle">
@@ -105,6 +113,7 @@
         <div id="footer-text">
             <p>© 2021 Aitor Ruiz Torralbo. All rights reserved.</p>
         </div>
-    </footer>
+    </footer>    
+    <script src="/js/app.js"></script>
 </body>
 </html>
