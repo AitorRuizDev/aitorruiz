@@ -251,7 +251,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: url(/assets/icons/decoration.svg)no-repeat;
+    background: url(/aitorruiz/assets/icons/decoration.svg)no-repeat;
     background-position: center;
     height: 90%;
   }
