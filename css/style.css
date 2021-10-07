@@ -95,7 +95,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/assets/icons/resume.svg)no-repeat;
+    background: url(/aitorruiz/assets/icons/resume.svg)no-repeat;
     background-position: center;
     height: 7vh;
     width: 25%;
@@ -106,7 +106,7 @@
   }
 
   #action:hover{
-    background: url(/assets/icons/resume-green.svg)no-repeat;
+    background: url(/aitorruiz/assets/icons/resume-green.svg)no-repeat;
     background-position:center;
     color:var(--main-color);
   }
